@@ -14,13 +14,11 @@ assign out = sum;
 
 always @(posedge clk) begin
 	if (reset == 1) begin
-		a <= 0;
-		b <= 0;
 		product <= 0;
 		sum <= 0;
 	end
 	else begin
-		product <= A * B;
+		product <= value * weight;
 		sum <= sum + product[23:8];
 	end
 end

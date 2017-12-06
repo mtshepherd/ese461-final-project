@@ -1,0 +1,56 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "In_Calculator_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 26
+        },
+        "In_Calculator_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 26
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "bytes": 7126,
+            "mode": 4,
+            "archive": "archive.25/_22796_archive_1.a"
+        },
+        "SQTUb_d": {
+            "mod": "In_Calculator_0000",
+            "out": "SQTUb_d.o",
+            "bytes": 524811,
+            "mode": 4,
+            "archive": "archive.25/_22796_archive_1.a"
+        },
+        "ny53t_d": {
+            "mod": "In_Calculator_tb",
+            "out": "ny53t_d.o",
+            "bytes": 12546,
+            "mode": 4,
+            "archive": "archive.25/_22796_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    7126
+                ],
+                [
+                    "SQTUb_d.o",
+                    524811
+                ],
+                [
+                    "ny53t_d.o",
+                    12546
+                ]
+            ],
+            "archive": "archive.25/_22796_archive_1.a",
+            "size": 544483
+        }
+    ]
+}

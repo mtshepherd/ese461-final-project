@@ -1,4 +1,4 @@
-src = Node_Calculator.v Node_Calculator_tb.v
+src = In_Calculator.v In_Calculator_tb.v
 
 vcs_flag = -full64 -PP +lint=all,noVCDE +v2k -timescale=1ns/10ps
 

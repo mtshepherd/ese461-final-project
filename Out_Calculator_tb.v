@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Node_Calculator_tb();
+module Out_Calculator_tb();
 
     reg  clk;
     reg  reset;
@@ -8,7 +8,7 @@ module Node_Calculator_tb();
     reg  [15:0] b;
     wire [15:0] layer_output;
 
-    Node_Calculator DUT(
+    Out_Calculator DUT(
         .clk(clk),
         .reset(reset),
 	.value(a),
@@ -18,8 +18,8 @@ module Node_Calculator_tb();
 
     initial
     begin
-        $dumpfile("Node_Calculator.vcd");
-        $dumpvars(0, Node_Calculator);
+        $dumpfile("Out_Calculator.vcd");
+        $dumpvars(0, Out_Calculator);
 
         reset = 1;
         clk = 0;

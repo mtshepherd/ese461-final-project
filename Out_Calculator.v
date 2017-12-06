@@ -1,4 +1,4 @@
-module Node_Calculator(clk, reset, value, weight, out);
+module Out_Calculator(clk, reset, value, weight, out);
 
 input clk;
 input reset;
@@ -7,10 +7,10 @@ input [15:0] weight;
 
 output [15:0] out;
 
-wire [31:0] product;
-reg [15:0] sum;
+reg [31:0] product;
+reg [31:0] sum;
 
-assign out = sum;
+assign out = sum[23:8];
 
 always @(posedge clk) begin
 	if (reset == 1) begin
@@ -19,7 +19,7 @@ always @(posedge clk) begin
 	end
 	else begin
 		product <= value * weight;
-		sum <= sum + product[23:8];
+		sum <= sum + product;
 	end
 end
 

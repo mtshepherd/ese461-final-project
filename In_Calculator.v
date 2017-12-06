@@ -8,6 +8,8 @@ module In_Calculator(clk, reset, values, weights, out);
 
     wire [15:0] inputs [0:783];
     wire [15:0] multipliers [0:783];
+
+    /* These wires are for debugging
     wire [25087:0] prods;
     wire [12543:0] s1;
     wire [6271:0] s2;
@@ -18,6 +20,7 @@ module In_Calculator(clk, reset, values, weights, out);
     wire [223:0] s7;
     wire [95:0] s8;
     wire [63:0] s9;
+    */
 
     reg [31:0] products [0:783];
     reg [31:0] sums1 [0:391];
@@ -38,8 +41,9 @@ generate
     for(g = 0; g < 784; g=g+1) begin:m
         assign inputs[g] = values[((g*16)+15):(g*16)];
         assign multipliers[g] = weights[((g*16)+15):(g*16)];
-        assign prods[((g*32)+31):(g*32)] = products[g];
+        //assign prods[((g*32)+31):(g*32)] = products[g]; // For debugging
     end
+    /* For debugging
     for(g = 0; g < 392; g=g+1) begin:n
         assign s1[((g*32)+31):(g*32)] = sums1[g];
     end
@@ -67,6 +71,7 @@ generate
     for(g = 0; g < 2; g=g+1) begin:v
         assign s9[((g*32)+31):(g*32)] = sums9[g];
     end
+    */
 endgenerate
 
 assign out = outReg[31:16];

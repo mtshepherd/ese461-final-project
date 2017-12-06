@@ -13,7 +13,7 @@ reg [31:0] sum;
 assign out = sum[23:8];
 
 always @(posedge clk) begin
-	if (reset == 1) begin
+	if (!reset) begin
 		product <= 0;
 		sum <= 0;
 	end

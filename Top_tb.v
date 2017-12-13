@@ -19,7 +19,7 @@ module Top_tb();
 	Top DUT(
 		.clk(clk),
 		.reset(reset),
-		.en(enable),
+		.en(en),
 		.we(we),
 		.active_we(active_we),
 		.wdata(wdata),
@@ -80,12 +80,38 @@ module Top_tb();
 	//Store Weights in layer 1 ShiftSRAM modules
 	en[0] = 1;
 	for(i = 0; i < 784; i = i + 1) begin
-		we
-		for(j = 0; j < 201; j = j + 1) begin
-			
+		addr = i;
+		for(j = 0; j < 200; j = j + 1) begin
+			we[j] = 1;
+                        wdata = layer1Data[(i*200)+j];
 			#20
+                        we[j] = 0;
 		end
 	end
+	en[0] = 0;
+
+	//Store Weights in layer 2 ShiftRAM modules
+	en[1] = 1;
+        for(i = 0; i < 200; i = i + 1) begin
+		addr = i;
+		for(j = 0; j < 10; j = j + 1) begin
+			we[j] = 1;
+			wdata = layer2Data[(i*10)+j];
+			#20
+			we[j] = 0;
+		end
+	end
+	en[1] = 0;
+	we = 0;
+
+	//Store Activations
+	j = 0;
+	active_we = 1;
+	for(i = 0; i < 156800; i = i + 1) begin
+		addr = i;
+		wdata = activation[j];
+	end
+	active_we = 0;
 
 	#10
         $finish;

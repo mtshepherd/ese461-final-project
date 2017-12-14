@@ -1,12 +1,22 @@
 {
-    "In_Calculator_tb": [
-        "In_Calculator_tb",
-        "ny53t",
+    "Activation": [
+        "Activation",
+        "ira63",
         "module"
     ],
-    "In_Calculator_0000": [
-        "In_Calculator_0000",
-        "SQTUb",
+    "Out_Calculator": [
+        "Out_Calculator",
+        "P1UFN",
+        "module"
+    ],
+    "ShiftRAM": [
+        "ShiftRAM",
+        "SgLKD",
+        "module"
+    ],
+    "Top_tb": [
+        "Top_tb",
+        "P2DQS",
         "module"
     ],
     "...MASTER...": [

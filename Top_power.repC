@@ -1,0 +1,53 @@
+Loading db file '/project/linuxlab/cadence/vendors/VTVT/vtvt_tsmc180/Synopsys_Libraries/libs/vtvt_tsmc180.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Top
+Version: J-2014.09-SP5
+Date   : Thu Dec 14 00:29:41 2017
+****************************************
+
+
+Library(s) Used:
+
+    vtvt_tsmc180 (File: /project/linuxlab/cadence/vendors/VTVT/vtvt_tsmc180/Synopsys_Libraries/libs/vtvt_tsmc180.db)
+
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  = 172.9931 mW   (76%)
+  Net Switching Power  =  55.2555 mW   (24%)
+                         ---------
+Total Dynamic Power    = 228.2486 mW  (100%)
+
+Cell Leakage Power     = 351.6975 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         139.5723            4.7114            0.3193          144.6193  (  63.26%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     33.4445           50.5423        3.2425e-02           84.0079  (  36.74%)
+--------------------------------------------------------------------------------------------------
+Total            173.0169 mW        55.2537 mW         0.3517 mW       228.6272 mW
+1

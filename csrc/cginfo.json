@@ -1,50 +1,24 @@
 {
-    "CompileProcesses": [
-        "cgproc.22796.json"
-    ],
-    "MlibObjs": {},
     "CurCompileUdps": {},
-    "LVLData": [
-        "SIM"
-    ],
-    "PrevCompiledModules": {
-        "In_Calculator_tb": {
-            "ny53t_d": {
-                "bytes": 12546,
-                "mod": "In_Calculator_tb",
-                "out": "ny53t_d.o",
-                "mode": 4,
-                "archive": "archive.25/_22796_archive_1.a"
-            }
-        },
-        "In_Calculator_0000": {
-            "SQTUb_d": {
-                "bytes": 524935,
-                "mod": "In_Calculator_0000",
-                "out": "SQTUb_d.o",
-                "mode": 4,
-                "archive": "archive.25/_22796_archive_1.a"
-            }
-        },
-        "...MASTER...": {
-            "amcQw_d": {
-                "bytes": 7126,
-                "mod": "...MASTER...",
-                "out": "amcQw_d.o",
-                "mode": 4,
-                "archive": "archive.25/_22796_archive_1.a"
-            }
-        }
-    },
     "NameTable": {
-        "In_Calculator_tb": [
-            "In_Calculator_tb",
-            "ny53t",
+        "Activation": [
+            "Activation",
+            "ira63",
             "module"
         ],
-        "In_Calculator_0000": [
-            "In_Calculator_0000",
-            "SQTUb",
+        "Out_Calculator": [
+            "Out_Calculator",
+            "P1UFN",
+            "module"
+        ],
+        "ShiftRAM": [
+            "ShiftRAM",
+            "SgLKD",
+            "module"
+        ],
+        "Top_tb": [
+            "Top_tb",
+            "P2DQS",
             "module"
         ],
         "...MASTER...": [
@@ -53,28 +27,36 @@
             "module"
         ]
     },
-    "CompileStatus": "Successful",
     "CompileStrategy": "fullobj",
     "SIMBData": {
         "out": "amcQwB.o",
-        "bytes": 73500
+        "bytes": 71121
     },
+    "PEModules": [],
     "CurCompileModules": [
         "...MASTER...",
-        "In_Calculator_0000",
-        "In_Calculator_tb"
+        "Out_Calculator",
+        "Activation",
+        "ShiftRAM",
+        "Top_tb"
     ],
-    "PEModules": [],
+    "LVLData": [
+        "SIM"
+    ],
     "Misc": {
-        "archive_dir": "archive.25",
-        "csrc": "csrc",
         "cwd": "/home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer",
-        "csrc_abs": "/home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/csrc",
         "daidir": "simv.daidir",
+        "csrc": "csrc",
+        "archive_dir": "archive.0",
         "daidir_abs": "/home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/simv.daidir",
+        "csrc_abs": "/home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/csrc",
         "default_output_dir": "csrc"
     },
+    "CompileProcesses": [
+        "cgproc.31871.json"
+    ],
     "stat": {
-        "nMops": 86649
-    }
+        "nMops": 91921
+    },
+    "CompileStatus": "Successful"
 }

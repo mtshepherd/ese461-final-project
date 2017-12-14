@@ -1,13 +1,13 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Wed Dec 6 01:35:48 2017
+# Saved on Wed Dec 13 23:49:06 2017
 # Designs open: 1
-#   V1: /home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/In_Calculator.vcd
+#   V1: /home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/Top.vcd
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: 
 #   Group count = 1
-#   Group DUT signal count = 17
+#   Group DUT signal count = 44
 # End_DVE_Session_Save_Info
 
 # DVE version: J-2014.12-SP1-1
@@ -66,7 +66,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{195 147} {1188 716}}
+gui_show_window -window ${TopLevel.1} -show_state normal -rect {{227 179} {1188 716}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -112,18 +112,18 @@ catch { set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] }
 gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 105
 gui_set_window_pref_key -window ${HSPane.1} -key dock_height -value_type integer -value -1
 gui_set_window_pref_key -window ${HSPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 105} {height 365} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 105} {height 333} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
 set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 105]
 catch { set Data.1 [gui_share_window -id ${DLPane.1} -type Data] }
 gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 105
-gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 366
+gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 334
 gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 105} {height 365} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 105} {height 333} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
 set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 105]
-gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 994
+gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 962
 gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 105
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 993} {height 105} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 961} {height 105} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
@@ -166,8 +166,8 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 
 # DVE Open design session: 
 
-if { ![gui_is_db_opened -db {/home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/In_Calculator.vcd.vpd}] } {
-	gui_open_db -design V1 -file /home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/In_Calculator.vcd.vpd -nosource
+if { ![gui_is_db_opened -db {/home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/Top.vcd.vpd}] } {
+	gui_open_db -design V1 -file /home/warehouse/mshepherd/My Documents/MyDocuments/Schoolwork/ESE461/ese461-final-project-shepherd-pollak-greer/Top.vcd.vpd -nosource
 }
 gui_set_precision 1ps
 gui_set_time_units 1ps
@@ -185,16 +185,16 @@ gui_set_time_units 1ps
 # Global: Signal Compare
 
 # Global: Signal Groups
-gui_load_child_values {In_Calculator_tb.DUT}
+gui_load_child_values {Top_tb.DUT}
 
 
 set _session_group_1 DUT
 gui_sg_create "$_session_group_1"
 set DUT "$_session_group_1"
 
-gui_sg_addsignal -group "$_session_group_1" { In_Calculator_tb.DUT.clk In_Calculator_tb.DUT.reset In_Calculator_tb.DUT.values In_Calculator_tb.DUT.weights In_Calculator_tb.DUT.out In_Calculator_tb.DUT.prods In_Calculator_tb.DUT.s1 In_Calculator_tb.DUT.s2 In_Calculator_tb.DUT.s3 In_Calculator_tb.DUT.s4 In_Calculator_tb.DUT.s5 In_Calculator_tb.DUT.s6 In_Calculator_tb.DUT.s7 In_Calculator_tb.DUT.s8 In_Calculator_tb.DUT.s9 In_Calculator_tb.DUT.outReg In_Calculator_tb.DUT.i }
-gui_set_radix -radix {decimal} -signals {V1:In_Calculator_tb.DUT.i}
-gui_set_radix -radix {twosComplement} -signals {V1:In_Calculator_tb.DUT.i}
+gui_sg_addsignal -group "$_session_group_1" { Top_tb.DUT.clk Top_tb.DUT.reset Top_tb.DUT.enableLayer3 Top_tb.DUT.we Top_tb.DUT.wdata Top_tb.DUT.waddr Top_tb.DUT.inputs Top_tb.DUT.weights1 Top_tb.DUT.weights2 Top_tb.DUT.output0 Top_tb.DUT.output1 Top_tb.DUT.output2 Top_tb.DUT.output3 Top_tb.DUT.output4 Top_tb.DUT.output5 Top_tb.DUT.output6 Top_tb.DUT.output7 Top_tb.DUT.output8 Top_tb.DUT.output9 Top_tb.DUT.reset2 Top_tb.DUT.layer1pre Top_tb.DUT.layer1post Top_tb.DUT.prevReset Top_tb.DUT.i {Top_tb.DUT.\l2[0].layer3pre } {Top_tb.DUT.\l2[0].layer3post } {Top_tb.DUT.\l2[1].layer3pre } {Top_tb.DUT.\l2[1].layer3post } {Top_tb.DUT.\l2[2].layer3pre } {Top_tb.DUT.\l2[2].layer3post } {Top_tb.DUT.\l2[3].layer3pre } {Top_tb.DUT.\l2[3].layer3post } {Top_tb.DUT.\l2[4].layer3pre } {Top_tb.DUT.\l2[4].layer3post } {Top_tb.DUT.\l2[5].layer3pre } {Top_tb.DUT.\l2[5].layer3post } {Top_tb.DUT.\l2[6].layer3pre } {Top_tb.DUT.\l2[6].layer3post } {Top_tb.DUT.\l2[7].layer3pre } {Top_tb.DUT.\l2[7].layer3post } {Top_tb.DUT.\l2[8].layer3pre } {Top_tb.DUT.\l2[8].layer3post } {Top_tb.DUT.\l2[9].layer3pre } {Top_tb.DUT.\l2[9].layer3post } }
+gui_set_radix -radix {decimal} -signals {V1:Top_tb.DUT.i}
+gui_set_radix -radix {twosComplement} -signals {V1:Top_tb.DUT.i}
 
 # Global: Highlighting
 
@@ -229,15 +229,15 @@ gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtP
 gui_list_set_filter -id ${Hier.1} -text {*}
 gui_hier_list_init -id ${Hier.1}
 gui_change_design -id ${Hier.1} -design V1
-catch {gui_list_expand -id ${Hier.1} In_Calculator_tb}
-catch {gui_list_select -id ${Hier.1} {In_Calculator_tb.DUT}}
+catch {gui_list_expand -id ${Hier.1} Top_tb}
+catch {gui_list_select -id ${Hier.1} {Top_tb.DUT}}
 gui_view_scroll -id ${Hier.1} -vertical -set 0
 gui_view_scroll -id ${Hier.1} -horizontal -set 0
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {In_Calculator_tb.DUT}
+gui_list_show_data -id ${Data.1} {Top_tb.DUT}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
 gui_view_scroll -id ${Hier.1} -vertical -set 0

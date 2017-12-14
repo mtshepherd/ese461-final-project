@@ -1907,20 +1907,37 @@ static inline U asm_bsf (U in)
 extern "C" {
 #endif
 void  hsM_0_0 (UB  * pcode, scalar  val);
+void  hsM_0_5 (UB  * pcode, UB  val);
 void  hsM_1_0 (UB  * pcode, scalar  val);
+void  hsM_1_5 (UB  * pcode, UB  val);
 void  hsM_2_0 (UB  * pcode, scalar  val);
+void  hsM_2_5 (UB  * pcode, UB  val);
 void  hsM_3_0 (UB  * pcode, vec32  * I853, U  I789);
+void  hsM_3_5 (UB  * pcode, U  I789);
 void  hsM_4_0 (UB  * pcode, vec32  * I853, U  I789);
 void  hsM_5_0 (UB  * pcode, vec32  * I853, U  I789);
+void  hsM_5_6 (UB  * pcode, scalar  val, U  I904);
+void  hsM_5_7 (UB  * pcode, vec32  * I1074, U  I904, U  I1083);
+void  hsM_5_10 (UB  * pcode, vec32  * I853);
 void  hsM_6_0 (UB  * pcode, vec32  * I853, U  I789);
-void  hsM_6_6 (UB  * pcode, scalar  val, U  I904);
-void  hsM_6_7 (UB  * pcode, vec32  * I1074, U  I904, U  I1083);
-void  hsM_6_10 (UB  * pcode, vec32  * I853);
 void  hsM_7_0 (UB  * pcode, vec32  * I853, U  I789);
 void  hsM_8_0 (UB  * pcode, vec32  * I853, U  I789);
-void  hsM_8_6 (UB  * pcode, scalar  val, U  I904);
-void  hsM_8_7 (UB  * pcode, vec32  * I1074, U  I904, U  I1083);
-void  hsM_8_10 (UB  * pcode, vec32  * I853);
+void  hsM_9_0 (UB  * pcode, scalar  val);
+void  hsM_10_0 (UB  * pcode, vec32  * I853, U  I789);
+void  hsM_11_0 (UB  * pcode, vec32  * I853, U  I789);
+void  hsM_12_0 (UB  * pcode, scalar  val);
+void  hsM_13_0 (UB  * pcode, scalar  val);
+void  hsM_14_0 (UB  * pcode, scalar  val);
+void  hsM_15_0 (UB  * pcode, scalar  val);
+void  hsM_16_0 (UB  * pcode, vec32  * I853, U  I789);
+void  hsM_17_0 (UB  * pcode, scalar  val);
+void  hsM_18_0 (UB  * pcode, vec32  * I853, U  I789);
+void  hsM_19_0 (UB  * pcode, scalar  val);
+void  hsM_20_0 (UB  * pcode, scalar  val);
+void  hsM_21_0 (UB  * pcode, vec32  * I853, U  I789);
+void  hsM_21_6 (UB  * pcode, scalar  val, U  I904);
+void  hsM_21_7 (UB  * pcode, vec32  * I1074, U  I904, U  I1083);
+void  hsM_21_10 (UB  * pcode, vec32  * I853);
 void  hsG_0 (struct dummyq_struct * I1002, EBLK  * I1003, U  I709);
 #ifdef __cplusplus
 }

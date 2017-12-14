@@ -1,0 +1,1299 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 3
+        -greater_path 0.00
+        -max_paths 20
+Design : Top
+Version: J-2014.09-SP5
+Date   : Thu Dec 14 00:29:46 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[0].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[0].layer2/mult_21/a[5] (Top_DW_mult_tc_768)          0.00     490.84 f
+  l2[0].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[0].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[0].layer2/mult_21/U1412/op (nand2_1)               130.54    1103.57 f
+  l2[0].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[0].layer2/mult_21/U1333/op (nand2_1)                93.45    1370.60 f
+  l2[0].layer2/mult_21/U1330/op (and2_1)                138.92    1509.52 f
+  l2[0].layer2/mult_21/U1328/op (xor2_1)                178.90    1688.42 f
+  l2[0].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[0].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[0].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[0].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[0].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[0].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[0].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[0].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[0].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[0].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[0].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[0].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[0].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[0].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[0].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[0].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[0].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[0].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[0].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[0].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[0].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[0].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[0].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[0].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[0].layer2/mult_21/U853/op (inv_1)                   87.06   23830.40 r
+  l2[0].layer2/mult_21/product[31] (Top_DW_mult_tc_768)     0.00 23830.40 r
+  U312429/op (and2_2)                                   113.23   23943.63 r
+  l2[0].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[0].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[1].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[1].layer2/mult_21/a[5] (Top_DW_mult_tc_769)          0.00     490.84 f
+  l2[1].layer2/mult_21/U818/op (buf_2)                  248.84     739.69 f
+  l2[1].layer2/mult_21/U833/op (xnor2_1)                233.34     973.03 r
+  l2[1].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[1].layer2/mult_21/U821/op (inv_2)                  173.58    1277.15 r
+  l2[1].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[1].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[1].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[1].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[1].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[1].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[1].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[1].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[1].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[1].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[1].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[1].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[1].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[1].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[1].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[1].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[1].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[1].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[1].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[1].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[1].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[1].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[1].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[1].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[1].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[1].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[1].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[1].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[1].layer2/mult_21/product[31] (Top_DW_mult_tc_769)     0.00 23830.40 r
+  U312364/op (and2_2)                                   113.23   23943.63 r
+  l2[1].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[1].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[2].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[2].layer2/mult_21/a[5] (Top_DW_mult_tc_770)          0.00     490.84 f
+  l2[2].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[2].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[2].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[2].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[2].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[2].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[2].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[2].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[2].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[2].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[2].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[2].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[2].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[2].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[2].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[2].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[2].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[2].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[2].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[2].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[2].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[2].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[2].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[2].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[2].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[2].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[2].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[2].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[2].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[2].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[2].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[2].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[2].layer2/mult_21/product[31] (Top_DW_mult_tc_770)     0.00 23830.40 r
+  U312299/op (and2_2)                                   113.23   23943.63 r
+  l2[2].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[2].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[3].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[3].layer2/mult_21/a[5] (Top_DW_mult_tc_771)          0.00     490.84 f
+  l2[3].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[3].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[3].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[3].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[3].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[3].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[3].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[3].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[3].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[3].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[3].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[3].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[3].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[3].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[3].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[3].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[3].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[3].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[3].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[3].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[3].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[3].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[3].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[3].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[3].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[3].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[3].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[3].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[3].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[3].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[3].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[3].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[3].layer2/mult_21/product[31] (Top_DW_mult_tc_771)     0.00 23830.40 r
+  U312234/op (and2_2)                                   113.23   23943.63 r
+  l2[3].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[3].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[4].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[4].layer2/mult_21/a[5] (Top_DW_mult_tc_772)          0.00     490.84 f
+  l2[4].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[4].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[4].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[4].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[4].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[4].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[4].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[4].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[4].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[4].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[4].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[4].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[4].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[4].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[4].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[4].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[4].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[4].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[4].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[4].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[4].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[4].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[4].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[4].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[4].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[4].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[4].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[4].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[4].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[4].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[4].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[4].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[4].layer2/mult_21/product[31] (Top_DW_mult_tc_772)     0.00 23830.40 r
+  U312169/op (and2_2)                                   113.23   23943.63 r
+  l2[4].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[4].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[5].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[5].layer2/mult_21/a[5] (Top_DW_mult_tc_773)          0.00     490.84 f
+  l2[5].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[5].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[5].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[5].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[5].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[5].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[5].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[5].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[5].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[5].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[5].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[5].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[5].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[5].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[5].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[5].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[5].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[5].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[5].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[5].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[5].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[5].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[5].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[5].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[5].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[5].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[5].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[5].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[5].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[5].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[5].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[5].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[5].layer2/mult_21/product[31] (Top_DW_mult_tc_773)     0.00 23830.40 r
+  U312104/op (and2_2)                                   113.23   23943.63 r
+  l2[5].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[5].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[6].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[6].layer2/mult_21/a[5] (Top_DW_mult_tc_774)          0.00     490.84 f
+  l2[6].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[6].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[6].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[6].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[6].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[6].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[6].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[6].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[6].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[6].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[6].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[6].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[6].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[6].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[6].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[6].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[6].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[6].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[6].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[6].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[6].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[6].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[6].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[6].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[6].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[6].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[6].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[6].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[6].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[6].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[6].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[6].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[6].layer2/mult_21/product[31] (Top_DW_mult_tc_774)     0.00 23830.40 r
+  U312039/op (and2_2)                                   113.23   23943.63 r
+  l2[6].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[6].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[7].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[7].layer2/mult_21/a[5] (Top_DW_mult_tc_775)          0.00     490.84 f
+  l2[7].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[7].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[7].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[7].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[7].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[7].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[7].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[7].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[7].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[7].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[7].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[7].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[7].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[7].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[7].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[7].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[7].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[7].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[7].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[7].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[7].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[7].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[7].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[7].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[7].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[7].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[7].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[7].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[7].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[7].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[7].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[7].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[7].layer2/mult_21/product[31] (Top_DW_mult_tc_775)     0.00 23830.40 r
+  U311974/op (and2_2)                                   113.23   23943.63 r
+  l2[7].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[7].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[8].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[8].layer2/mult_21/a[5] (Top_DW_mult_tc_776)          0.00     490.84 f
+  l2[8].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[8].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[8].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[8].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[8].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[8].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[8].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[8].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[8].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[8].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[8].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[8].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[8].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[8].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[8].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[8].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[8].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[8].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[8].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[8].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[8].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[8].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[8].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[8].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[8].layer2/mult_21/U58/co (fulladder)               440.27   21179.38 f
+  l2[8].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[8].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[8].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[8].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[8].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[8].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[8].layer2/mult_21/U854/op (inv_1)                   87.06   23830.40 r
+  l2[8].layer2/mult_21/product[31] (Top_DW_mult_tc_776)     0.00 23830.40 r
+  U311909/op (and2_2)                                   113.23   23943.63 r
+  l2[8].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
+  data arrival time                                              23943.63
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[8].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23943.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75915.69
+
+
+  Startpoint: layer1Active/rdata_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[9].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
+  U312534/op (buf_2)                                    274.05     490.84 f
+  l2[9].layer2/mult_21/a[5] (Top_DW_mult_tc_777)          0.00     490.84 f
+  l2[9].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[9].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[9].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
+  l2[9].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[9].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
+  l2[9].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
+  l2[9].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
+  l2[9].layer2/mult_21/U177/s (fulladder)              3863.94    5552.36 f
+  l2[9].layer2/mult_21/U176/s (fulladder)              2550.71    8103.07 f
+  l2[9].layer2/mult_21/U73/co (fulladder)              1482.09    9585.16 f
+  l2[9].layer2/mult_21/U72/co (fulladder)              1031.94   10617.10 f
+  l2[9].layer2/mult_21/U71/co (fulladder)              1031.94   11649.04 f
+  l2[9].layer2/mult_21/U70/co (fulladder)              1082.15   12731.19 f
+  l2[9].layer2/mult_21/U69/co (fulladder)               796.75   13527.93 f
+  l2[9].layer2/mult_21/U68/co (fulladder)              1166.39   14694.33 f
+  l2[9].layer2/mult_21/U67/co (fulladder)              1170.64   15864.97 f
+  l2[9].layer2/mult_21/U66/co (fulladder)               846.82   16711.79 f
+  l2[9].layer2/mult_21/U65/co (fulladder)               804.13   17515.92 f
+  l2[9].layer2/mult_21/U64/co (fulladder)               639.46   18155.38 f
+  l2[9].layer2/mult_21/U63/co (fulladder)               636.58   18791.96 f
+  l2[9].layer2/mult_21/U62/co (fulladder)               544.66   19336.62 f
+  l2[9].layer2/mult_21/U61/co (fulladder)               492.66   19829.29 f
+  l2[9].layer2/mult_21/U60/co (fulladder)               463.24   20292.52 f
+  l2[9].layer2/mult_21/U59/co (fulladder)               446.59   20739.12 f
+  l2[9].layer2/mult_21/U58/co (fulladder)               440.26   21179.38 f
+  l2[9].layer2/mult_21/U57/co (fulladder)               441.72   21621.10 f
+  l2[9].layer2/mult_21/U56/co (fulladder)               441.23   22062.33 f
+  l2[9].layer2/mult_21/U55/co (fulladder)               437.15   22499.48 f
+  l2[9].layer2/mult_21/U54/co (fulladder)               436.47   22935.95 f
+  l2[9].layer2/mult_21/U53/co (fulladder)               432.49   23368.44 f
+  l2[9].layer2/mult_21/U52/co (fulladder)               374.90   23743.34 f
+  l2[9].layer2/mult_21/U854/op (inv_1)                   86.41   23829.75 r
+  l2[9].layer2/mult_21/product[31] (Top_DW_mult_tc_777)     0.00 23829.75 r
+  U311844/op (and2_2)                                   113.08   23942.83 r
+  l2[9].layer2/product_reg[31]/ip (dp_1)                  0.00   23942.83 r
+  data arrival time                                              23942.83
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[9].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.72   99859.28
+  data required time                                             99859.28
+  --------------------------------------------------------------------------
+  data required time                                             99859.28
+  data arrival time                                              -23942.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75916.45
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[0].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[0].layer2/mult_21/a[7] (Top_DW_mult_tc_768)          0.00     490.84 f
+  l2[0].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[0].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[0].layer2/mult_21/U1419/op (nand2_1)               130.54    1103.57 f
+  l2[0].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[0].layer2/mult_21/U1338/op (nand2_1)                93.45    1370.60 f
+  l2[0].layer2/mult_21/U1335/op (and2_1)                134.54    1505.14 f
+  l2[0].layer2/mult_21/U1328/op (xor2_1)                160.56    1665.70 f
+  l2[0].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[0].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[0].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[0].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[0].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[0].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[0].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[0].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[0].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[0].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[0].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[0].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[0].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[0].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[0].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[0].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[0].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[0].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[0].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[0].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[0].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[0].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[0].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[0].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[0].layer2/mult_21/U853/op (inv_1)                   87.06   23807.67 r
+  l2[0].layer2/mult_21/product[31] (Top_DW_mult_tc_768)     0.00 23807.67 r
+  U312429/op (and2_2)                                   113.23   23920.91 r
+  l2[0].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[0].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[1].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[1].layer2/mult_21/a[7] (Top_DW_mult_tc_769)          0.00     490.84 f
+  l2[1].layer2/mult_21/U819/op (buf_2)                  248.84     739.69 f
+  l2[1].layer2/mult_21/U834/op (xnor2_1)                233.34     973.03 r
+  l2[1].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[1].layer2/mult_21/U822/op (inv_2)                  173.58    1277.15 r
+  l2[1].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[1].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[1].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[1].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[1].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[1].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[1].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[1].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[1].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[1].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[1].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[1].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[1].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[1].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[1].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[1].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[1].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[1].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[1].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[1].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[1].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[1].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[1].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[1].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[1].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[1].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[1].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[1].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[1].layer2/mult_21/product[31] (Top_DW_mult_tc_769)     0.00 23807.67 r
+  U312364/op (and2_2)                                   113.23   23920.91 r
+  l2[1].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[1].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[2].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[2].layer2/mult_21/a[7] (Top_DW_mult_tc_770)          0.00     490.84 f
+  l2[2].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[2].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[2].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[2].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[2].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[2].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[2].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[2].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[2].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[2].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[2].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[2].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[2].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[2].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[2].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[2].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[2].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[2].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[2].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[2].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[2].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[2].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[2].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[2].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[2].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[2].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[2].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[2].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[2].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[2].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[2].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[2].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[2].layer2/mult_21/product[31] (Top_DW_mult_tc_770)     0.00 23807.67 r
+  U312299/op (and2_2)                                   113.23   23920.91 r
+  l2[2].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[2].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[3].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[3].layer2/mult_21/a[7] (Top_DW_mult_tc_771)          0.00     490.84 f
+  l2[3].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[3].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[3].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[3].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[3].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[3].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[3].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[3].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[3].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[3].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[3].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[3].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[3].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[3].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[3].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[3].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[3].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[3].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[3].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[3].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[3].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[3].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[3].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[3].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[3].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[3].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[3].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[3].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[3].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[3].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[3].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[3].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[3].layer2/mult_21/product[31] (Top_DW_mult_tc_771)     0.00 23807.67 r
+  U312234/op (and2_2)                                   113.23   23920.91 r
+  l2[3].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[3].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[4].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[4].layer2/mult_21/a[7] (Top_DW_mult_tc_772)          0.00     490.84 f
+  l2[4].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[4].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[4].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[4].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[4].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[4].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[4].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[4].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[4].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[4].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[4].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[4].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[4].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[4].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[4].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[4].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[4].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[4].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[4].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[4].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[4].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[4].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[4].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[4].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[4].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[4].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[4].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[4].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[4].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[4].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[4].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[4].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[4].layer2/mult_21/product[31] (Top_DW_mult_tc_772)     0.00 23807.67 r
+  U312169/op (and2_2)                                   113.23   23920.91 r
+  l2[4].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[4].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[5].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[5].layer2/mult_21/a[7] (Top_DW_mult_tc_773)          0.00     490.84 f
+  l2[5].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[5].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[5].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[5].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[5].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[5].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[5].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[5].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[5].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[5].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[5].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[5].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[5].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[5].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[5].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[5].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[5].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[5].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[5].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[5].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[5].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[5].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[5].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[5].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[5].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[5].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[5].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[5].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[5].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[5].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[5].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[5].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[5].layer2/mult_21/product[31] (Top_DW_mult_tc_773)     0.00 23807.67 r
+  U312104/op (and2_2)                                   113.23   23920.91 r
+  l2[5].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[5].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[6].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[6].layer2/mult_21/a[7] (Top_DW_mult_tc_774)          0.00     490.84 f
+  l2[6].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[6].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[6].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[6].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[6].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[6].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[6].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[6].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[6].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[6].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[6].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[6].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[6].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[6].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[6].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[6].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[6].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[6].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[6].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[6].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[6].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[6].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[6].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[6].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[6].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[6].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[6].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[6].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[6].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[6].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[6].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[6].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[6].layer2/mult_21/product[31] (Top_DW_mult_tc_774)     0.00 23807.67 r
+  U312039/op (and2_2)                                   113.23   23920.91 r
+  l2[6].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[6].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[7].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[7].layer2/mult_21/a[7] (Top_DW_mult_tc_775)          0.00     490.84 f
+  l2[7].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[7].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[7].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[7].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[7].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[7].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[7].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[7].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[7].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[7].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[7].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[7].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[7].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[7].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[7].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[7].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[7].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[7].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[7].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[7].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[7].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[7].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[7].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[7].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[7].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[7].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[7].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[7].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[7].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[7].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[7].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[7].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[7].layer2/mult_21/product[31] (Top_DW_mult_tc_775)     0.00 23807.67 r
+  U311974/op (and2_2)                                   113.23   23920.91 r
+  l2[7].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[7].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[8].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[8].layer2/mult_21/a[7] (Top_DW_mult_tc_776)          0.00     490.84 f
+  l2[8].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[8].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[8].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[8].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[8].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[8].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[8].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[8].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[8].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[8].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[8].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[8].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[8].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[8].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[8].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[8].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[8].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[8].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[8].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[8].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[8].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[8].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[8].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[8].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[8].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[8].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[8].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[8].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[8].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[8].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[8].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[8].layer2/mult_21/U854/op (inv_1)                   87.06   23807.67 r
+  l2[8].layer2/mult_21/product[31] (Top_DW_mult_tc_776)     0.00 23807.67 r
+  U311909/op (and2_2)                                   113.23   23920.91 r
+  l2[8].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
+  data arrival time                                              23920.91
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[8].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.68   99859.32
+  data required time                                             99859.32
+  --------------------------------------------------------------------------
+  data required time                                             99859.32
+  data arrival time                                              -23920.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75938.41
+
+
+  Startpoint: layer1Active/rdata_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: l2[9].layer2/product_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  layer1Active/rdata_reg[7]/ck (dp_1)                     0.00 #     0.00 r
+  layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
+  U312528/op (buf_2)                                    274.05     490.84 f
+  l2[9].layer2/mult_21/a[7] (Top_DW_mult_tc_777)          0.00     490.84 f
+  l2[9].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[9].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[9].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
+  l2[9].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[9].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
+  l2[9].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
+  l2[9].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
+  l2[9].layer2/mult_21/U177/s (fulladder)              3863.94    5529.64 f
+  l2[9].layer2/mult_21/U176/s (fulladder)              2550.71    8080.35 f
+  l2[9].layer2/mult_21/U73/co (fulladder)              1482.09    9562.44 f
+  l2[9].layer2/mult_21/U72/co (fulladder)              1031.94   10594.37 f
+  l2[9].layer2/mult_21/U71/co (fulladder)              1031.94   11626.32 f
+  l2[9].layer2/mult_21/U70/co (fulladder)              1082.15   12708.46 f
+  l2[9].layer2/mult_21/U69/co (fulladder)               796.75   13505.21 f
+  l2[9].layer2/mult_21/U68/co (fulladder)              1166.39   14671.60 f
+  l2[9].layer2/mult_21/U67/co (fulladder)              1170.64   15842.25 f
+  l2[9].layer2/mult_21/U66/co (fulladder)               846.82   16689.06 f
+  l2[9].layer2/mult_21/U65/co (fulladder)               804.13   17493.20 f
+  l2[9].layer2/mult_21/U64/co (fulladder)               639.46   18132.65 f
+  l2[9].layer2/mult_21/U63/co (fulladder)               636.58   18769.24 f
+  l2[9].layer2/mult_21/U62/co (fulladder)               544.66   19313.90 f
+  l2[9].layer2/mult_21/U61/co (fulladder)               492.66   19806.56 f
+  l2[9].layer2/mult_21/U60/co (fulladder)               463.24   20269.80 f
+  l2[9].layer2/mult_21/U59/co (fulladder)               446.59   20716.39 f
+  l2[9].layer2/mult_21/U58/co (fulladder)               440.27   21156.66 f
+  l2[9].layer2/mult_21/U57/co (fulladder)               441.72   21598.38 f
+  l2[9].layer2/mult_21/U56/co (fulladder)               441.23   22039.61 f
+  l2[9].layer2/mult_21/U55/co (fulladder)               437.15   22476.76 f
+  l2[9].layer2/mult_21/U54/co (fulladder)               436.47   22913.22 f
+  l2[9].layer2/mult_21/U53/co (fulladder)               432.49   23345.71 f
+  l2[9].layer2/mult_21/U52/co (fulladder)               374.90   23720.61 f
+  l2[9].layer2/mult_21/U854/op (inv_1)                   86.41   23807.03 r
+  l2[9].layer2/mult_21/product[31] (Top_DW_mult_tc_777)     0.00 23807.03 r
+  U311844/op (and2_2)                                   113.08   23920.10 r
+  l2[9].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.10 r
+  data arrival time                                              23920.10
+
+  clock clk (rise edge)                               100000.00  100000.00
+  clock network delay (ideal)                             0.00   100000.00
+  l2[9].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
+  library setup time                                   -140.72   99859.28
+  data required time                                             99859.28
+  --------------------------------------------------------------------------
+  data required time                                             99859.28
+  data arrival time                                              -23920.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                    75939.18
+
+
+1

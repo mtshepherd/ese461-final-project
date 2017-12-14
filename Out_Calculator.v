@@ -2,13 +2,13 @@ module Out_Calculator(clk, reset, value, weight, out);
 
 input clk;
 input reset;
-input [15:0] value;
-input [15:0] weight;
+input signed [15:0] value;
+input signed [15:0] weight;
 
-output [15:0] out;
+output signed [15:0] out;
 
-reg [31:0] product;
-reg [31:0] sum;
+reg signed [31:0] product;
+reg signed [32:0] sum;
 
 assign out = sum[23:8];
 

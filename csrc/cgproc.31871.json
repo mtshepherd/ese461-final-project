@@ -1,0 +1,86 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "Activation": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Out_Calculator": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "ShiftRAM": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Top_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "P1UFN_d": {
+            "archive": "archive.0/_31871_archive_1.a",
+            "mode": 4,
+            "mod": "Out_Calculator",
+            "out": "P1UFN_d.o",
+            "bytes": 8763
+        },
+        "amcQw_d": {
+            "archive": "archive.0/_31871_archive_1.a",
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "bytes": 7788
+        },
+        "ira63_d": {
+            "archive": "archive.0/_31871_archive_1.a",
+            "mode": 4,
+            "mod": "Activation",
+            "out": "ira63_d.o",
+            "bytes": 8627
+        },
+        "P2DQS_d": {
+            "archive": "archive.0/_31871_archive_1.a",
+            "mode": 4,
+            "mod": "Top_tb",
+            "out": "P2DQS_d.o",
+            "bytes": 562779
+        },
+        "SgLKD_d": {
+            "archive": "archive.0/_31871_archive_1.a",
+            "mode": 4,
+            "mod": "ShiftRAM",
+            "out": "SgLKD_d.o",
+            "bytes": 9990
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_31871_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    7788
+                ],
+                [
+                    "P1UFN_d.o",
+                    8763
+                ],
+                [
+                    "ira63_d.o",
+                    8627
+                ],
+                [
+                    "SgLKD_d.o",
+                    9990
+                ],
+                [
+                    "P2DQS_d.o",
+                    562779
+                ]
+            ],
+            "size": 597947
+        }
+    ]
+}

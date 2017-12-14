@@ -2,6 +2,7 @@ module ShiftRAM(clk, rst, en, we, rdata, addr, wdata);
 
     input clk;
     input rst;
+    input en;
     input we;
     input [17:0] addr;
     input [15:0] wdata;

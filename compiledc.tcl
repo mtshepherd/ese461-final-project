@@ -4,7 +4,7 @@
 #######################################################################
 # Give the list of your verilog files
 # If you have single file in your design, then
-set my_verilog_files [list Top.v ShiftRAM.v Activation.v In_Calculator.v Out_Calculator.v]
+set my_verilog_files [list Top.v Activation.v In_Calculator.v Out_Calculator.v]
 
 # If you have single file in your design
 # set my_verilog_files [list File1.v File2.v]
@@ -14,7 +14,7 @@ set my_verilog_files [list Top.v ShiftRAM.v Activation.v In_Calculator.v Out_Cal
 set my_toplevel Top
 
 # set the clock period in ps
-set CLK_PERIOD 10000
+set CLK_PERIOD 100000
 
 # setting the port of clock, this is the input Clock from your design
 set CLOCK_INPUT clk
@@ -177,7 +177,7 @@ check_design
 check_timing
 
 # enable DC ultra optimizations 
-compile_ultra
+compile
 
 # verifies timing setup is complete
 check_timing

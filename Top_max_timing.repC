@@ -8,7 +8,7 @@ Report : timing
         -max_paths 20
 Design : Top
 Version: J-2014.09-SP5
-Date   : Thu Dec 14 00:29:46 2017
+Date   : Thu Dec 14 17:33:52 2017
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -29,7 +29,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[0].layer2/mult_21/a[5] (Top_DW_mult_tc_768)          0.00     490.84 f
   l2[0].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[0].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -68,16 +68,16 @@ Wire Load Model Mode: top
   l2[0].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[0].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[0].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -93,12 +93,12 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[1].layer2/mult_21/a[5] (Top_DW_mult_tc_769)          0.00     490.84 f
-  l2[1].layer2/mult_21/U818/op (buf_2)                  248.84     739.69 f
-  l2[1].layer2/mult_21/U833/op (xnor2_1)                233.34     973.03 r
+  l2[1].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
+  l2[1].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
   l2[1].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
-  l2[1].layer2/mult_21/U821/op (inv_2)                  173.58    1277.15 r
+  l2[1].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
   l2[1].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
   l2[1].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
   l2[1].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
@@ -132,16 +132,16 @@ Wire Load Model Mode: top
   l2[1].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[1].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[1].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -157,7 +157,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[2].layer2/mult_21/a[5] (Top_DW_mult_tc_770)          0.00     490.84 f
   l2[2].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[2].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -196,16 +196,16 @@ Wire Load Model Mode: top
   l2[2].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[2].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[2].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -221,7 +221,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[3].layer2/mult_21/a[5] (Top_DW_mult_tc_771)          0.00     490.84 f
   l2[3].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[3].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -260,16 +260,16 @@ Wire Load Model Mode: top
   l2[3].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[3].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[3].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -285,7 +285,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[4].layer2/mult_21/a[5] (Top_DW_mult_tc_772)          0.00     490.84 f
   l2[4].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[4].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -324,16 +324,16 @@ Wire Load Model Mode: top
   l2[4].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[4].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[4].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -349,7 +349,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[5].layer2/mult_21/a[5] (Top_DW_mult_tc_773)          0.00     490.84 f
   l2[5].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[5].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -388,16 +388,16 @@ Wire Load Model Mode: top
   l2[5].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[5].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[5].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -413,7 +413,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[6].layer2/mult_21/a[5] (Top_DW_mult_tc_774)          0.00     490.84 f
   l2[6].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[6].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -452,16 +452,16 @@ Wire Load Model Mode: top
   l2[6].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[6].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[6].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -477,7 +477,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[7].layer2/mult_21/a[5] (Top_DW_mult_tc_775)          0.00     490.84 f
   l2[7].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[7].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -516,16 +516,16 @@ Wire Load Model Mode: top
   l2[7].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[7].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[7].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -541,7 +541,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[8].layer2/mult_21/a[5] (Top_DW_mult_tc_776)          0.00     490.84 f
   l2[8].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
   l2[8].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
@@ -580,16 +580,16 @@ Wire Load Model Mode: top
   l2[8].layer2/product_reg[31]/ip (dp_1)                  0.00   23943.63 r
   data arrival time                                              23943.63
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[8].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[8].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23943.63
   --------------------------------------------------------------------------
-  slack (MET)                                                    75915.69
+  slack (MET)                                                      915.69
 
 
   Startpoint: layer1Active/rdata_reg[5]
@@ -605,12 +605,12 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   layer1Active/rdata_reg[5]/ck (dp_1)                     0.00 #     0.00 r
   layer1Active/rdata_reg[5]/q (dp_1)                    216.79     216.79 f
-  U312534/op (buf_2)                                    274.05     490.84 f
+  U312531/op (buf_2)                                    274.05     490.84 f
   l2[9].layer2/mult_21/a[5] (Top_DW_mult_tc_777)          0.00     490.84 f
-  l2[9].layer2/mult_21/U816/op (buf_2)                  248.84     739.69 f
-  l2[9].layer2/mult_21/U831/op (xnor2_1)                233.34     973.03 r
+  l2[9].layer2/mult_21/U818/op (buf_2)                  248.84     739.69 f
+  l2[9].layer2/mult_21/U833/op (xnor2_1)                233.34     973.03 r
   l2[9].layer2/mult_21/U1413/op (nand2_1)               130.54    1103.57 f
-  l2[9].layer2/mult_21/U819/op (inv_2)                  173.58    1277.15 r
+  l2[9].layer2/mult_21/U821/op (inv_2)                  173.58    1277.15 r
   l2[9].layer2/mult_21/U1334/op (nand2_1)                93.45    1370.60 f
   l2[9].layer2/mult_21/U1331/op (and2_1)                138.92    1509.52 f
   l2[9].layer2/mult_21/U1329/op (xor2_1)                178.90    1688.42 f
@@ -644,16 +644,16 @@ Wire Load Model Mode: top
   l2[9].layer2/product_reg[31]/ip (dp_1)                  0.00   23942.83 r
   data arrival time                                              23942.83
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[9].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.72   99859.28
-  data required time                                             99859.28
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[9].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.72   24859.28
+  data required time                                             24859.28
   --------------------------------------------------------------------------
-  data required time                                             99859.28
+  data required time                                             24859.28
   data arrival time                                              -23942.83
   --------------------------------------------------------------------------
-  slack (MET)                                                    75916.45
+  slack (MET)                                                      916.46
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -708,16 +708,16 @@ Wire Load Model Mode: top
   l2[0].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[0].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[0].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -735,10 +735,10 @@ Wire Load Model Mode: top
   layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
   U312528/op (buf_2)                                    274.05     490.84 f
   l2[1].layer2/mult_21/a[7] (Top_DW_mult_tc_769)          0.00     490.84 f
-  l2[1].layer2/mult_21/U819/op (buf_2)                  248.84     739.69 f
-  l2[1].layer2/mult_21/U834/op (xnor2_1)                233.34     973.03 r
+  l2[1].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
+  l2[1].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
   l2[1].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
-  l2[1].layer2/mult_21/U822/op (inv_2)                  173.58    1277.15 r
+  l2[1].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
   l2[1].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
   l2[1].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
   l2[1].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
@@ -772,16 +772,16 @@ Wire Load Model Mode: top
   l2[1].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[1].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[1].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -836,16 +836,16 @@ Wire Load Model Mode: top
   l2[2].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[2].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[2].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -900,16 +900,16 @@ Wire Load Model Mode: top
   l2[3].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[3].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[3].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -964,16 +964,16 @@ Wire Load Model Mode: top
   l2[4].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[4].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[4].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -1028,16 +1028,16 @@ Wire Load Model Mode: top
   l2[5].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[5].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[5].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -1092,16 +1092,16 @@ Wire Load Model Mode: top
   l2[6].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[6].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[6].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -1156,16 +1156,16 @@ Wire Load Model Mode: top
   l2[7].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[7].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[7].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -1220,16 +1220,16 @@ Wire Load Model Mode: top
   l2[8].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.91 r
   data arrival time                                              23920.91
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[8].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.68   99859.32
-  data required time                                             99859.32
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[8].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.68   24859.32
+  data required time                                             24859.32
   --------------------------------------------------------------------------
-  data required time                                             99859.32
+  data required time                                             24859.32
   data arrival time                                              -23920.91
   --------------------------------------------------------------------------
-  slack (MET)                                                    75938.41
+  slack (MET)                                                      938.41
 
 
   Startpoint: layer1Active/rdata_reg[7]
@@ -1247,10 +1247,10 @@ Wire Load Model Mode: top
   layer1Active/rdata_reg[7]/q (dp_1)                    216.79     216.79 f
   U312528/op (buf_2)                                    274.05     490.84 f
   l2[9].layer2/mult_21/a[7] (Top_DW_mult_tc_777)          0.00     490.84 f
-  l2[9].layer2/mult_21/U817/op (buf_2)                  248.84     739.69 f
-  l2[9].layer2/mult_21/U832/op (xnor2_1)                233.34     973.03 r
+  l2[9].layer2/mult_21/U819/op (buf_2)                  248.84     739.69 f
+  l2[9].layer2/mult_21/U834/op (xnor2_1)                233.34     973.03 r
   l2[9].layer2/mult_21/U1420/op (nand2_1)               130.54    1103.57 f
-  l2[9].layer2/mult_21/U820/op (inv_2)                  173.58    1277.15 r
+  l2[9].layer2/mult_21/U822/op (inv_2)                  173.58    1277.15 r
   l2[9].layer2/mult_21/U1339/op (nand2_1)                93.45    1370.60 f
   l2[9].layer2/mult_21/U1336/op (and2_1)                134.54    1505.14 f
   l2[9].layer2/mult_21/U1329/op (xor2_1)                160.56    1665.70 f
@@ -1284,16 +1284,16 @@ Wire Load Model Mode: top
   l2[9].layer2/product_reg[31]/ip (dp_1)                  0.00   23920.10 r
   data arrival time                                              23920.10
 
-  clock clk (rise edge)                               100000.00  100000.00
-  clock network delay (ideal)                             0.00   100000.00
-  l2[9].layer2/product_reg[31]/ck (dp_1)                  0.00   100000.00 r
-  library setup time                                   -140.72   99859.28
-  data required time                                             99859.28
+  clock clk (rise edge)                               25000.00   25000.00
+  clock network delay (ideal)                             0.00   25000.00
+  l2[9].layer2/product_reg[31]/ck (dp_1)                  0.00   25000.00 r
+  library setup time                                   -140.72   24859.28
+  data required time                                             24859.28
   --------------------------------------------------------------------------
-  data required time                                             99859.28
+  data required time                                             24859.28
   data arrival time                                              -23920.10
   --------------------------------------------------------------------------
-  slack (MET)                                                    75939.18
+  slack (MET)                                                      939.18
 
 
 1

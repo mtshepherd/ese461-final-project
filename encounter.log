@@ -1,0 +1,94 @@
+Checking out Encounter license ...
+	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+	encblk		DENIED:		"Encounter_Block"
+	fegxl		DENIED:		"First_Encounter_GXL"
+	fexl		DENIED:		"FE_GPS"
+	nru		DENIED:		"NanoRoute_Ultra"
+	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.23-s044_1 (64bit) 03/20/2015 11:30 (Linux 2.6.18-194.el5)
+@(#)CDS: NanoRoute v14.23-s028 NR150319-1745/14_23-UB (database version 2.30, 255.6.1) {superthreading v1.25}
+@(#)CDS: CeltIC v14.23-s013_1 (64bit) 03/09/2015 04:15:07 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.23-s010 (64bit) 03/20/2015 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.23-s014_1 (64bit) Mar  9 2015 03:15:25 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.23-s032
+@(#)CDS: IQRC/TQRC 14.1.6-s260 (64bit) Mon Mar  2 11:26:49 PST 2015 (Linux 2.6.18-194.el5)
+@(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+@(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+@(#)CDS: RCDB 11.5
+--- Starting "Encounter v14.23-s044_1" on Thu Dec 14 14:52:35 2017 (mem=88.2M) ---
+--- Running on linuxlab006.seas.wustl.edu (x86_64 w/Linux 3.10.0-514.26.2.el7.x86_64) ---
+This version was compiled on Fri Mar 20 11:30:09 PDT 2015.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file /project/linuxlab/cadence/vendors/VTVT/vtvt_tsmc180/vtvt_tsmc180_lef/vtvt_tsmc180.lef
+<CMD> set init_verilog Top.syn.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file /project/linuxlab/cadence/vendors/VTVT/vtvt_tsmc180/vtvt_tsmc180_lef/vtvt_tsmc180.lef ...
+**WARN: (ENCLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 810.
+
+viaInitial starts at Thu Dec 14 14:55:41 2017
+viaInitial ends at Thu Dec 14 14:55:41 2017
+*** Begin netlist parsing (mem=318.0M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'Top.syn.v'
+
+*** Memory Usage v#3 (Current mem = 1126.895M, initial mem = 88.223M) ***
+*** End netlist parsing (cpu=0:00:07.3, real=0:00:08.0, mem=1126.9M) ***
+Top level cell is Top.
+Loading view definition file from Default.view
+Reading vtvt_tsmc180 timing library '/project/linuxlab/cadence/vendors/VTVT/vtvt_tsmc180/Synopsys_Libraries/libs/vtvt_tsmc180.lib' ...
+Read 84 cells in library 'vtvt_tsmc180' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=1.01min, fe_real=3.35min, fe_mem=1134.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell Top ...
+*** Netlist is unique.
+** info: there are 1642 modules.
+** info: there are 1215923 stdCell insts.
+**ERROR: (ENCLIC-104):	Instance count (= 1215923) has exceeded 2x50K limit of license Virtuoso_Digital_Implem.
+**ERROR: (ENCVL-909):	Failed to flatten the design.
+
+
+*** Memory Usage v#3 (Current mem = 1721.367M, initial mem = 88.223M) ***
+*** Message Summary: 1 warning(s), 1 error(s)
+
+--- Ending "Encounter" (totcpu=0:01:05, real=0:03:25, mem=1721.4M) ---

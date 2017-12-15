@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "Activation": [
         "Activation",
         "ira63",
@@ -17,6 +18,16 @@
     "Top_tb": [
         "Top_tb",
         "P2DQS",
+=======
+    "In_Calculator_tb": [
+        "In_Calculator_tb",
+        "ny53t",
+        "module"
+    ],
+    "In_Calculator_0000": [
+        "In_Calculator_0000",
+        "SQTUb",
+>>>>>>> 4f1986a410fb816d082d330e73c5dd21beb325f2
         "module"
     ],
     "...MASTER...": [
